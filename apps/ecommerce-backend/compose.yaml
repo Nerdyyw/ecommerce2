@@ -1,0 +1,12 @@
+services:
+  database:
+    image: 'postgres:latest'
+    ports:
+      - '5432:5432'
+    environment:
+      - 'POSTGRES_USER=wissal'
+      - 'POSTGRES_DB=wissal'
+      - 'POSTGRES_PASSWORD=wissal'
+    volumes:
+          - 'C:/Users/WISSAL/volumes/ecommerceApp/postgres:/var/lib/postgresql/data'
+
