@@ -3,6 +3,7 @@ logging:
     ROOT: INFO
     org.hibernate.SQL: INFO
     fr.codecake.ecom: INFO
+    liquibase: DEBUG  # Activer les logs de debug pour Liquibase uniquement
 
 spring:
   application:
@@ -50,8 +51,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://codecake.kinde.com
-          jwk-set-uri: https://codecake.kinde.com/.well-known/jwks
+          issuer-uri: https://wissalchoukri.kinde.com
+          jwk-set-uri: https://wissalchoukri.kinde.com/.well-known/jwks
           audiences: http://localhost:8080/api
   devtools:
     restart:
@@ -67,20 +68,20 @@ spring:
 server:
   port: 8080
 
-#application:
+application:
 #  client-base-url: http://localhost:4200
-#  cors:
-#    allowed-origins: http://localhost:4200
-#    allowed-methods: "*"
-#    allowed-headers: "*"
-#    exposed-headers: "*"
-#    allow-credentials: false
-#    max-age: 300
-#  kinde:
-#    api: https://codecake.kinde.com
-#    client-id: ${KINDE_CLIENT_ID}
-#    client-secret: ${KINDE_CLIENT_SECRET}
-#    audience: https://codecake.kinde.com/api
+  cors:
+    allowed-origins: http://localhost:4200
+    allowed-methods: "*"
+    allowed-headers: "*"
+    exposed-headers: "*"
+    allow-credentials: false
+    max-age: 300
+  kinde:
+    api: https://wissalchoukri.kinde.com
+    client-id: ${KINDE_CLIENT_ID}
+    client-secret: ${KINDE_CLIENT_SECRET}
+    audience: https://wissalchoukri.kinde.com/api
 #  stripe:
 #    api-key: ${STRIPE_API_KEY}
 #    webhook-secret: ${STRIPE_WEBHOOK_SECRET}
