@@ -5,7 +5,7 @@ import { Pagination } from '../../shared/model/request.model';
 import { injectQuery } from '@tanstack/angular-query-experimental';
 import { lastValueFrom } from 'rxjs';
 import { ProductCardComponent } from '../../shop/product-card/product-card.component';
-// import { ProductCardComponent } from '../../shop/product-card/product-card.component';
+
 
 @Component({
   selector: 'ecom-featured',

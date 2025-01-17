@@ -28,6 +28,8 @@
   </scm>
   <properties>
     <java.version>21</java.version>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
   </properties>
   <dependencies>
     <dependency>
@@ -81,15 +83,30 @@
       <scope>provided</scope> <!-- Jilt is not needed at runtime -->
     </dependency>
     <dependency>
+      <groupId>com.stripe</groupId>
+      <artifactId>stripe-java</artifactId>
+      <version>26.11.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.stripe</groupId>
+      <artifactId>stripe-java</artifactId>
+      <version>28.3.0-beta.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.11.0</version>
+    </dependency>
+
+
+
+    <dependency>
       <groupId>org.apache.httpcomponents.client5</groupId>
       <artifactId>httpclient5</artifactId>
-      <version>5.3.1</version>
+      <version>5.2.1</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.apache.httpcomponents.client5</groupId>-->
-<!--      <artifactId>httpclient5</artifactId>-->
-<!--      <version>5.2.1</version>-->
-<!--    </dependency>-->
 
   </dependencies>
   <build>
