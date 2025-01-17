@@ -4,6 +4,7 @@ import { CreateCategoryComponent } from './admin/category/create-category/create
 import { roleCheckGuard } from './auth/role-check.guard';
 import { CreateProductComponent } from './admin/product/create-product/create-product.component';
 import { AdminProductsComponent } from './admin/product/admin-products/admin-products.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -39,8 +40,8 @@ export const appRoutes: Route[] = [
     data: {
       authorities: ['ROLE_ADMIN'],
     },
-  }
-  // je dois ajouter virgule
+  },
+
   // {
   //   path: 'admin/orders/list',
   //   component: AdminOrdersComponent,
@@ -49,10 +50,10 @@ export const appRoutes: Route[] = [
   //     authorities: ['ROLE_ADMIN'],
   //   },
   // },
-  // {
-  //   path: '',
-  //   component: HomeComponent,
-  // },
+  {
+    path: '',
+    component: HomeComponent,
+  },
   // {
   //   path: 'product/:publicId',
   //   component: ProductDetailComponent,
